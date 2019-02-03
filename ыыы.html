@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+</head>
+<body>
+<h1>Ты кто?</h1>
+<input type="" name="" id="input">
+<button id="button">Нажми на меня
+</button>
+<script type="text/javascript">
+	let input=document.getElementById('input');
+	let button=document.getElementById('button');
+	console.log(button)
+	button.onclick = function(){
+		if (input.value==='admin') {
+			alert('Войдите');
+		}
+		else if (input.value){
+			alert('Не правильное имя');
+		}
+		else {
+			alert('Поле пустое')
+		}
+	}
+</script>
+</body>
+</html>

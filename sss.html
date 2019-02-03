@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<button id="button">Кнопка</button>
+<div>Привет,<span id="username">username</span></div>
+<script type="text/javascript">
+	let button=document.getElementById('button');
+	let name=document.getElementById('username')
+	console.log(button)
+	button.onclick = function(){
+		let answer=prompt('Как тебя зовут?');
+		console.log(answer);
+		name.textContent = answer;
+		}
+
+</script>
+</body>
+</html>

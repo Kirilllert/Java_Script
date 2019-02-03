@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#click{
+			background-color: blue;
+			color: white;
+		}
+		.photo{
+			display: none;
+		}
+		.active{
+			display: inline-block;
+
+		}
+		.text{
+			display: none;
+		}
+		.active1{
+			display: inline-block;
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<button id="click">Кликни и начнется адская магия</button>
+	<h2 class="text" id="text"></h2>
+	<img class="photo" id="photo" src="">
+	<script type="text/javascript">
+		let click=document.getElementById('click');
+		let img=document.getElementById('photo');
+		let text=document.getElementById('text')
+		click.onclick=function(){
+			let anwer=prompt('Где ваша адская ссылочка',"адская ссылочка");
+			let txt=prompt("название");
+			photo.classList.toggle('active');
+			console.log(photo);
+			photo.src =anwer;
+			text.classList.toggle('active1');
+			console.log(txt);
+			text.textContent =txt;
+		}
+	</script>
+</body>
+</html>
